@@ -10,14 +10,16 @@ body {
     top: 5.6vw;
     left: 11.5vw;
     height: 2vw;
-    width: 10.76vw
+    width: 10.76vw;
+    max-height: 28.6px;
+    max-width: 155px;
 }
 
 .background {
     position: absolute;
     z-index: 0;
     width: 29.16vw;
-    height: 80vw;
+    min-height: 100%;
     background-color: black;
     top:0;
     right:0;
@@ -31,6 +33,8 @@ body {
     width: 37.5vw;
     height: 31.9vw;
     bottom: 20.7vw;
+    max-width: 532px;
+    max-height:460px;
 }
 
 .infoContainer__textContainer {
@@ -39,6 +43,8 @@ body {
     border: solid green 1px;
     width: 37.5vw;
     height: 16.38vw;
+    max-width: 532px;
+    max-height: 236px;
 }
 
 h1 {
@@ -52,6 +58,7 @@ h1 {
     letter-spacing: 0px;
     text-align: left;
     color: #333950;
+    
 }
 
 p {
@@ -72,6 +79,8 @@ p {
     margin-left: 0px;
     width: 31.1vw;
     height: 12.7vw;
+    max-width: 447px;
+    max-height: 182px;
 }
 
 h4 {
@@ -106,13 +115,17 @@ h4 {
     margin-left: 0px;
     width: 31.1vw;
     height: 8.8vw;
+    max-width: 447.84px;
+    max-height: 126px;
     display: flex;
     justify-content: space-between;
 }
 
-.boxes {
+.boxes{
     width: 6.94vw;
     height: 8.8vw;
+    max-width: 99.93px;
+    max-height: 126.7px;
     background-color: rgba(81,117,255,0.1);
     border-radius: 13px;
     color: #5175FF;
@@ -123,6 +136,15 @@ h4 {
     line-height: 3.3vw;
     letter-spacing: 0px;
     text-align: center;
+
+}
+
+.boxes, .jsDate {
+    display: block
+}
+
+.jsDate {
+    color: #5175FF;
 }
 
 .signupContainer {
@@ -132,6 +154,8 @@ h4 {
     left: 57.6vw;
     width: 30.9vw;
     height: 35.2vw;
+    max-width: 444.96px;
+    max-height: 506.86px;
     background: #FFF;
     box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
     border-radius: 13px;
@@ -141,6 +165,8 @@ input {
     box-sizing: border-box;
     width: 25vw;
     height: 3.1vw;
+    max-width: 360px;
+    max-height: 44.64px;
     border-bottom: solid gray 1px;
     border-top: none;
     border-left: none;
@@ -154,6 +180,8 @@ select {
     box-sizing: border-box;
     width: 25vw;
     height: 3.1vw;
+    max-width: 360px;
+    max-height: 44.64px;
     border-bottom: solid rgba(207, 205, 205, 0.562) 1px;
     border-top: none;
     border-left: none;
@@ -174,6 +202,8 @@ select {
 .options {
         width: 25vw;
         height: 3.9vw;
+        max-width: 360px;
+        max-height: 56.16px;
         border-bottom: 1px solid #999;
         font-size: 1.2vw;
         color: #333950;;
@@ -191,8 +221,41 @@ span {
     margin-left: 2.98vw;
     width:25vw;
     height: 3.9vw;
+    max-width: 360px;
+    max-height: 56.16px;
     background: #5175FF;
     border-radius: 28px;
     border: none;
     color: #FFF;
+}
+
+@media only screen and (min-width: 1440px){
+
+    h1 {
+        font-size: 57px;
+    }
+
+    p {
+        font-size: 17.75px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    .date {
+        font-size: 17px;
+    }
+
+    .boxes, .jsDate {
+        font-size: 31px;
+    }
+        
+    select {
+         font-size: 17px;
+    }   
+
+    .options {
+        font-size: 17px;
+    }
 }

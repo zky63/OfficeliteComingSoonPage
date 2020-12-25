@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | Officelite coming soon site</title>
+    
 </head>
 <body>
   <img id = "logo" src = 'assets/shared/logo.svg' alt = "logo">
@@ -23,10 +24,10 @@
     <div class = "infoContainer__countdownContainer">
       <h4>Coming<span class= "date" id = "day">4</span><span class = "date" id = "month">Nov</span><span class = "date" id = "year">2020</span></h4>
       <div class = "countdownContainer__boxes">
-        <div class = "boxes" id = "days">47 Days</div>
-        <div class = "boxes" id = "days">07 Hours</div>
-        <div class = "boxes" id = "days">56 Min</div>
-        <div class = "boxes" id = "days">14 Sec</div>
+        <div class = "boxes" id = "days"><span class = "jsDate">47</span>Days</div>
+        <div class = "boxes" id = "hours"><span class = "jsDate">07</span>Hours</div>
+        <div class = "boxes" id = "minutes"><span class = "jsDate">56</span>Min</div>
+        <div class = "boxes" id = "seconds"><span class = "jsDate">14</span>Sec</div>
       </div>
     </div>
   </div>
@@ -55,6 +56,6 @@
   
 
   <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
- 
+  <script src= "app.js"></script>
 </body>
 </html>
