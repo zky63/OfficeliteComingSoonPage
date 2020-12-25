@@ -5,32 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href = "stylesSign-up.css" rel = "stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  Work smarter. Save time.
+  <img id = "logo" src = 'assets/shared/logo.svg' alt = "logo">
+  <div class = "background"></div>
+  <div class = "infoContainer">
+    <div class = "infoContainer__textContainer">
+      <h1>Work smarter. Save time.</h1>
+      <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
+        early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+    </div>
+    <div class = "infoContainer__countdownContainer">
+      <h4>Coming<span class= "date" id = "day">4</span><span class = "date" id = "month">Nov</span><span class = "date" id = "year">2020</span></h4>
+      <div class = "countdownContainer__boxes">
+        <div class = "boxes" id = "days">47 Days</div>
+        <div class = "boxes" id = "days">07 Hours</div>
+        <div class = "boxes" id = "days">56 Min</div>
+        <div class = "boxes" id = "days">14 Sec</div>
+      </div>
+    </div>
+  </div>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+  <div class = "signupContainer">
+    <form class = "form">
+      <input type = "text" placeholder="Name">
+      <input type = "text" placeholder="Email Address">
+      <!-- <input type = "select"> -->
+      <select class = "options">
+          <option>Basic Pack <span class ="price">Free</span></option>
+          <option class = "middle">Pro Pack <span class ="price">$9.99</span></option>
+          <option>Ultimate Pack<span class ="price">$19.99</span></option>
+      </select>
+      <input type = "text" placeholder="Phone Number">
+      <input type = "text" placeholder="Company">    
+    </form>
+    <button class = "listButton">Get on the List</button>
+
+  </div>
+  
+
+  
 
   <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+  
 
   <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+ 
 </body>
 </html>

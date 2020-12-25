@@ -1,0 +1,198 @@
+body { 
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    overflow: hidden;
+}
+
+#logo {
+    position: absolute;
+    top: 5.6vw;
+    left: 11.5vw;
+    height: 2vw;
+    width: 10.76vw
+}
+
+.background {
+    position: absolute;
+    z-index: 0;
+    width: 29.16vw;
+    height: 80vw;
+    background-color: black;
+    top:0;
+    right:0;
+}
+
+.infoContainer {
+    position: absolute;
+    border: solid red 1px;
+    top: 18.4vw;
+    left: 11.45vw;
+    width: 37.5vw;
+    height: 31.9vw;
+    bottom: 20.7vw;
+}
+
+.infoContainer__textContainer {
+    top: 0;
+    left: 0;
+    border: solid green 1px;
+    width: 37.5vw;
+    height: 16.38vw;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 1.66vw;
+    font-family: 'Kumbh Sans';
+    font-size: 4.0vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.4vw;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #333950;
+}
+
+p {
+    margin-top: 0px;
+    font-family: 'Kumbh Sans';
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9vw;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #747B95;
+}
+
+.infoContainer__countdownContainer {
+    border: solid 1px orange;
+    margin-top: 2.7vw;
+    margin-left: 0px;
+    width: 31.1vw;
+    height: 12.7vw;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    color: #333950;
+}
+
+.date {
+    margin-top: 0px;
+    margin-left: 0.5vw;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    color: #5175FF;
+}
+
+.countdownContainer__boxes {
+    border: solid purple 1px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 31.1vw;
+    height: 8.8vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    width: 6.94vw;
+    height: 8.8vw;
+    background-color: rgba(81,117,255,0.1);
+    border-radius: 13px;
+    color: #5175FF;
+    font-family: 'Kumbh Sans';
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.signupContainer {
+    border: solid yellow 1px;
+    position: absolute;
+    top: 16.45vw;
+    left: 57.6vw;
+    width: 30.9vw;
+    height: 35.2vw;
+    background: #FFF;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 3.1vw;
+    border-bottom: solid gray 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1.6vw;
+    margin-left: 2.98vw;
+    padding-left: 1vw;
+}
+
+select {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 3.1vw;
+    border-bottom: solid rgba(207, 205, 205, 0.562) 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1.6vw;
+    margin-left: 2.98vw;
+    padding-left: .5vw;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.options {
+        width: 25vw;
+        height: 3.9vw;
+        border-bottom: 1px solid #999;
+        font-size: 1.2vw;
+        color: #333950;;
+        background-color: #FFF;
+        border-radius: 13px;
+        box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+}
+
+span {
+    color: rgba(51,57,80,0.4);
+}
+
+.listButton {
+    margin-top: 2.7vw;
+    margin-left: 2.98vw;
+    width:25vw;
+    height: 3.9vw;
+    background: #5175FF;
+    border-radius: 28px;
+    border: none;
+    color: #FFF;
+}
