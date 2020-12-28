@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link href = "stylesSign-up.css" rel = "stylesheet">
+  <link href="stylesSign-up.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
-    
+  <title>Frontend Mentor | Officelite coming soon site</title>
+
 </head>
+
 <body>
-  <img id = "logo" src = 'assets/shared/logo.svg' alt = "logo">
-  <div class = "background"></div>
-  <div class = "infoContainer">
-    <div class = "infoContainer__textContainer">
-      <h1>Work smarter. Save time.</h1>
-      <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
-        early subscribers. We are moving into final development and getting ready for official launch soon.</p>
-    </div>
-    <div class = "infoContainer__countdownContainer">
-      <h4>Coming<span class= "date" id = "day">4</span><span class = "date" id = "month">Nov</span><span class = "date" id = "year">2020</span></h4>
-      <div class = "countdownContainer__boxes">
-        <div class = "boxes" id = "days"><span class = "jsDate">47</span>Days</div>
-        <div class = "boxes" id = "hours"><span class = "jsDate">07</span>Hours</div>
-        <div class = "boxes" id = "minutes"><span class = "jsDate">56</span>Min</div>
-        <div class = "boxes" id = "seconds"><span class = "jsDate">14</span>Sec</div>
+  <div class="boxBox">
+    <div class="infoContainer">
+      <div class="infoContainer__textContainer">
+        <h1>Work smarter. Save time.</h1>
+        <p>Easily manage your projects. Get on the list and receive in-app perks available only to
+          early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+      </div>
+      <div class="infoContainer__countdownContainer">
+        <div class="dateBox">
+          <h4>Coming<span class="date" id="day">4</span><span class="date" id="month">Nov</span><span class="date"
+              id="year">2020</span></h4>
+        </div>
+        <div class="countdownContainer__boxes">
+          <div class="boxes"><span class="jsDate" id="days">30</span>Days</div>
+          <div class="boxes"><span class="jsDate" id="hours">00</span>Hours</div>
+          <div class="boxes"><span class="jsDate" id="minutes">00</span>Min</div>
+          <div class="boxes"><span class="jsDate" id="seconds">00</span>Sec</div>
+        </div>
       </div>
     </div>
+
+    <div class="signupContainer">
+      <div class="form">
+        <form class="form">
+          <div class="inputContainer">
+            <input type="text" placeholder="Name" id="name">
+            <img id="nameError" src="assets/sign-up/icon-cross.svg">
+          </div>
+          <div class="inputContainer" id="emailBorder">
+            <input type="text" placeholder="Email Address" id="emailAddress">
+            <img id="emailError" src="assets/sign-up/icon-cross.svg">
+          </div>
+
+          <div class="inputContainer">
+            <select class="options">
+              <option>Basic Pack <span class="price">Free</span></option>
+              <option class="middle">Pro Pack <span class="price">$9.99</span></option>
+              <option>Ultimate Pack<span class="price">$19.99</span></option>
+            </select>
+          </div>
+          <div class="inputContainer">
+            <input type="text" placeholder="Phone Number">
+          </div>
+          <div class="inputContainer">
+            <input type="text" placeholder="Company">
+          </div>
+        </form>
+      </div>
+      <div class="button">
+        <button id="button" class="listButton">Get on the List</button>
+      </div>
+
+    </div>
   </div>
 
-  <div class = "signupContainer">
-    <form class = "form">
-      <input type = "text" placeholder="Name">
-      <input type = "text" placeholder="Email Address">
-      <!-- <input type = "select"> -->
-      <select class = "options">
-          <option>Basic Pack <span class ="price">Free</span></option>
-          <option class = "middle">Pro Pack <span class ="price">$9.99</span></option>
-          <option>Ultimate Pack<span class ="price">$19.99</span></option>
-      </select>
-      <input type = "text" placeholder="Phone Number">
-      <input type = "text" placeholder="Company">    
-    </form>
-    <button class = "listButton">Get on the List</button>
-
-  </div>
-  
-
-  
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  <script src= "app.js"></script>
+  <img id="logo" src='assets/shared/logo.svg' alt="logo">
+  <div class="background"></div>
+  <script src="signup.js"></script>
 </body>
+
 </html>

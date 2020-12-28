@@ -1,70 +1,69 @@
-body { 
+body {
     width: 100vw;
     height: 100vh;
-    background: #FFF;
-    overflow: hidden;
+    display: flex;
+    margin:0;
+    padding: 0;
 }
 
 #logo {
     position: absolute;
-    top: 5.6vw;
-    left: 11.5vw;
-    height: 2vw;
-    width: 10.76vw;
-    max-height: 28.6px;
-    max-width: 155px;
+    top: 7.9%;
+    left: 11.45%;
+    height: 2.9%;
+    width: 10.76%;
 }
 
 .background {
-    position: absolute;
-    z-index: 0;
-    width: 29.16vw;
-    min-height: 100%;
-    background-color: black;
-    top:0;
+    position: fixed;
+    z-index:-1;
     right:0;
+    width: 29%;
+    height: 100%;
+    background-color: black;
 }
 
-.infoContainer {
-    position: absolute;
-    border: solid red 1px;
-    top: 18.4vw;
-    left: 11.45vw;
-    width: 37.5vw;
-    height: 31.9vw;
-    bottom: 20.7vw;
-    max-width: 532px;
-    max-height:460px;
+.boxBox {
+    width: 77%;
+    height:50%;
+    /* border: solid red 1px; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.infoContainer__textContainer {
-    top: 0;
-    left: 0;
-    border: solid green 1px;
-    width: 37.5vw;
-    height: 16.38vw;
-    max-width: 532px;
-    max-height: 236px;
-}
+ .infoContainer {
+    /* border: solid blue 1px; */
+    width: 47%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+ }
 
-h1 {
+ .infoContainer__textContainer {
+     /* border: solid pink 1px; */
+     height: 60%;
+ }
+
+ h1 {
     margin-top: 0px;
     margin-bottom: 1.66vw;
     font-family: 'Kumbh Sans';
-    font-size: 4.0vw;
+    font-size: 3.25vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 4.4vw;
+    line-height: 3.0vw;
     letter-spacing: 0px;
     text-align: left;
     color: #333950;
-    
 }
 
 p {
     margin-top: 0px;
+    margin-bottom: 0;
     font-family: 'Kumbh Sans';
-    font-size: 1.25vw;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 1.9vw;
@@ -74,13 +73,9 @@ p {
 }
 
 .infoContainer__countdownContainer {
-    border: solid 1px orange;
-    margin-top: 2.7vw;
-    margin-left: 0px;
-    width: 31.1vw;
-    height: 12.7vw;
-    max-width: 447px;
-    max-height: 182px;
+    /* border: solid 1px orange; */
+    width: 83%;
+    height:40%;
 }
 
 h4 {
@@ -98,7 +93,7 @@ h4 {
 
 .date {
     margin-top: 0px;
-    margin-left: 0.5vw;
+    margin-left: 1.5%;
     font-family: 'Kumbh Sans';
     font-size: 1.2vw;
     font-style: normal;
@@ -109,153 +104,362 @@ h4 {
     color: #5175FF;
 }
 
-.countdownContainer__boxes {
-    border: solid purple 1px;
+ .dateBox {
+     /* border: solid red 1px; */
+     height: 30%;
+     width: 100%;
+ }
+
+ .countdownContainer__boxes {
+    /* border: solid purple 1px; */
     margin-bottom: 0px;
     margin-left: 0px;
-    width: 31.1vw;
-    height: 8.8vw;
-    max-width: 447.84px;
-    max-height: 126px;
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
 }
 
 .boxes{
-    width: 6.94vw;
-    height: 8.8vw;
-    max-width: 99.93px;
-    max-height: 126.7px;
+    box-sizing: border-box;
+    padding-top: 5%;
+    width: 22%;
+    height: 100%;
     background-color: rgba(81,117,255,0.1);
     border-radius: 13px;
-    color: #5175FF;
+    color: #333950;;
     font-family: 'Kumbh Sans';
-    font-size: 2.2vw;
     font-style: normal;
     font-weight: 700;
     line-height: 3.3vw;
     letter-spacing: 0px;
     text-align: center;
-
 }
 
 .boxes, .jsDate {
     display: block
 }
 
-.jsDate {
-    color: #5175FF;
+.boxes {
+    font-size: 1.4vw;
 }
+
+ .jsDate {
+    color: #5175FF;
+    font-size: 2.4vw; 
+    margin-bottom: -15%;
+} 
 
 .signupContainer {
-    border: solid yellow 1px;
-    position: absolute;
-    top: 16.45vw;
-    left: 57.6vw;
-    width: 30.9vw;
-    height: 35.2vw;
-    max-width: 444.96px;
-    max-height: 506.86px;
-    background: #FFF;
+    /* border: solid green 1px; */
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
     box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
     border-radius: 13px;
+    justify-content: flex-start;
+    align-items: center
+ }
+
+ .form {
+     height: 75%;
+     width: 100%;
+ }
+
+ input, select {
+    box-sizing: border-box;
+    width: 85%;
+    height: 70%;
+    border: none;
+    padding-left: 1vw;
+    outline: none;
 }
 
-input {
+select:hover {
+    cursor: pointer;
+}
+
+.inputContainer {
     box-sizing: border-box;
-    width: 25vw;
-    height: 3.1vw;
-    max-width: 360px;
-    max-height: 44.64px;
+    width: 80.9%;
+    height: 15.85%;
     border-bottom: solid gray 1px;
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-top: 1.6vw;
+    margin-top: 4.5%;
     margin-left: 2.98vw;
     padding-left: 1vw;
 }
 
-select {
-    box-sizing: border-box;
-    width: 25vw;
-    height: 3.1vw;
-    max-width: 360px;
-    max-height: 44.64px;
-    border-bottom: solid rgba(207, 205, 205, 0.562) 1px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-top: 1.6vw;
-    margin-left: 2.98vw;
-    padding-left: .5vw;
-    font-family: 'Kumbh Sans';
-    font-size: 1.2vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-
+#nameError, #emailError {
+    display: none;
 }
 
-.options {
-        width: 25vw;
-        height: 3.9vw;
-        max-width: 360px;
-        max-height: 56.16px;
-        border-bottom: 1px solid #999;
-        font-size: 1.2vw;
-        color: #333950;;
-        background-color: #FFF;
-        border-radius: 13px;
-        box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
-}
 
-span {
+.price {
     color: rgba(51,57,80,0.4);
 }
 
-.listButton {
-    margin-top: 2.7vw;
-    margin-left: 2.98vw;
-    width:25vw;
+/* .options {
+    width: 25vw;
     height: 3.9vw;
+    max-width: 360px;
+    max-height: 56.16px;
+    border-bottom: 1px solid #999;
+    font-size: 1.2vw;
+    color: #333950;;
+    background-color: #FFF;
+    border-radius: 13px;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+} */
+
+.button {
+    /* border: black solid 1px; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listButton {
+    width:81%;
+    height: 30%;
     max-width: 360px;
     max-height: 56.16px;
     background: #5175FF;
     border-radius: 28px;
     border: none;
+    font-size: 1.2vw;
     color: #FFF;
+    outline: none;
 }
 
-@media only screen and (min-width: 1440px){
+.listButton:hover {
+    cursor: pointer;
+}
 
-    h1 {
-        font-size: 57px;
-    }
 
-    p {
-        font-size: 17.75px;
-    }
 
-    h4 {
-        font-size: 17px;
+@media only screen and (max-width: 800px){
+    body {
+        overflow-y: visible;
     }
-
-    .date {
-        font-size: 17px;
-    }
-
-    .boxes, .jsDate {
-        font-size: 31px;
-    }
+    #logo {
         
-    select {
-         font-size: 17px;
-    }   
+        top: 5.4%;
+        left: 5%;
+        height: 2.3%;
+        width: 20%;
+    }
 
-    .options {
-        font-size: 17px;
+    .background {
+        bottom:0;
+        width: 100%;
+        height: 28.8%; 
+    }
+
+    .boxBox {
+        width: 74.6%;
+        height:74.9%;
+        /* border: solid red 1px; */
+        margin-top: 20.6%;
+        flex-direction: column;
+    }
+
+    .infoContainer {
+         /* border: solid blue 1px;  */
+        width: 65%;
+        height: 40%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5%;
+     }
+
+     .signupContainer {
+        /* border: solid green 1px;  */
+        width: 60%;
+        height: 60%;       
+        align-items: center;
+     }
+
+     h1 {
+        font-size: 4vw;
+        line-height: 3.0vw;
+        color: #333950;
+    }
+    
+    p {
+        font-size: 2vw;
+        line-height: 2.4vw;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    
+    .infoContainer__countdownContainer {
+        /* border: solid 1px orange;  */
+        width: 70%;
+        height:60%;
+        margin-bottom: 10%;
+    }
+    
+    h4 { 
+        font-size: 2vw;
+        line-height: 3.3vw;
+        text-align: center;
+    }
+    
+    .date {
+        margin-left: 1.5%;
+        font-size: 2vw;
+        line-height: 3.3vw;        
+    }
+    
+     .dateBox {
+         /* border: solid red 1px; */
+         height: 30%;
+         width: 100%;
+         margin-bottom: 4%;
+     }
+    
+     .countdownContainer__boxes {
+        /* border: solid purple 1px; */
+        width: 100%;
+        height: 70%; 
+    }
+    
+    .boxes{
+        height: 100%;
+        font-size: 2vw;
+        line-height: 3.3vw;
+        text-align: center;
+       
+    }
+    
+    /* .boxes, .jsDate {
+        display: block;
+    } */
+
+    
+    
+     .jsDate {
+       
+        font-size: 3vw; 
+    } 
+    
+    .listButton {
+        font-size: 1.7vw;
     }
 }
+
+@media only screen and (max-width: 425px){
+
+    #logo {
+        top: 46px;
+        margin-left: 30%;
+        height: 30px;
+        width: 155px;
+    }
+
+    .background {
+        position: absolute;
+        bottom: -700px;
+        width: 110%;
+        height: 320px; 
+    }
+
+    .boxBox {
+        left: 0;
+        width: 95%;
+        height: 1080px;
+        /* border: solid red 1px;  */
+        margin-top: 15%px;
+    }
+
+    .infoContainer {
+        /* border: solid blue 1px;   */
+       width: 85%;
+       height: 464px;
+       margin: auto;
+       justify-content: flex-start;
+       align-items: center;
+    }
+
+    .infoContainer__textContainer{
+        margin-bottom: 20%;
+    }
+
+    .signupContainer {
+         /* border: solid green 1px;   */
+        width: 80%;
+        height: 465px;       
+        align-items: center;
+     }
+
+     h1 {
+        font-size: 40px;
+        line-height: 48px;
+        color: #333950;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        
+    }
+
+    .infoContainer__countdownContainer {
+         /* border: solid 1px orange;   */
+        width: 80%;
+        height: 158px;
+        margin-bottom: 10%;
+    }
+    
+    h4 { 
+        font-size: 16px;
+        line-height: 48px;
+        text-align: center;
+    }
+    
+    .date {
+        margin-left: 1.5%;
+        font-size: 16px;
+        line-height: 48px;        
+    }
+    
+     .dateBox {
+         /* border: solid red 1px;  */
+         height: 30%;
+         width: 100%;
+     }
+    
+     .countdownContainer__boxes {
+         /* border: solid purple 1px;  */
+        width: 120%;
+        height: 70%; 
+        margin-left: -10%;
+    }
+    
+    .boxes{
+        height: 100%;
+        font-size: 12px;
+        line-height: 28px;
+        text-align: center;
+        
+    }
+
+    .jsDate {
+        font-size: 32px; 
+        margin-bottom: 2%;
+    } 
+
+    .listButton {
+        font-size: 16px;
+    }
+}
+

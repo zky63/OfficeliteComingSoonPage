@@ -1,0 +1,649 @@
+body {
+    background-color: #FAFAFA;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    position: absolute;
+    width: 10.7%;
+    height: 3%;
+    top: 9%;
+    left: 8.45%;
+}
+
+.upperBox {
+    box-sizing: border-box;
+    width: 98.7%;
+    height: 800px;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lowerBox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 98.7%;
+    height: 800px;
+    /* border: solid blue 1px; */
+}
+
+.textBox {
+    height: 45%;
+    width: 39%;
+    margin-left: 5%;
+    /* border: solid orange 1px; */
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 1.66vw;
+    font-family: 'Kumbh Sans';
+    font-size: 3.25vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.0vw;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #333950;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 7%;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9vw;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #747B95;
+}
+
+button {
+    width:30%;
+    height: 15%;
+    max-width: 360px;
+    max-height: 56.16px;
+    background: #5175FF;
+    border-radius: 28px;
+    border: none;
+    font-size: 1.2vw;
+    color: #FFF;
+    outline: none;
+}
+
+button:hover {
+    background: #829CFF;
+    cursor: pointer;
+}
+
+.charts {
+    height: 55%;
+    width: 40%;
+    /* border: solid green 1px; */
+    margin-top: -5%;
+}
+
+.charts img {
+    width: 80%;
+    height: 120%;
+}
+
+/* .background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
+    height: 80%;
+    background-color: black;
+} */
+
+.priceBoxContainer {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid yellow 1px; */
+    width: 75%;
+    height: 55%;
+    align-self: center;
+}
+
+.priceBox {
+    box-sizing: border-box;
+    height: 100%;
+    width: 31%;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    /* border: solid purple 1px; */
+    
+}
+
+#basic {
+    background-color: #FFFFFF;
+}
+
+#pro {
+    background-color: #5175FF;
+}
+
+#ultimate {
+    background-color: #FFFFFF;
+}
+
+.planName {
+    font-family: 'Kumbh Sans';
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.planPrice {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.planUsers {
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.planDetails {
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.planButton {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+#basic .planPrice, #basic .planName, #basic .planUsers, #ultimate .planName, #ultimate .planPrice, #ultimate .planUsers {
+    color: #333950;
+}
+
+#basic p,  #ultimate p {
+    color: #747B95;
+}
+
+#pro h1, #pro h4, #pro p {
+    color: #FFFFFF;
+}
+
+#pro p {
+    opacity: 0.75;
+}
+
+#basic .planButton, #ultimate .planButton {
+    background-color: rgb(81,117,255,.15);
+    color: #5175FF;
+}
+
+#basic .planButton:hover, #ultimate .planButton:hover {
+    background-color: rgba(81, 117, 255, .35);
+}
+
+
+#pro .planButton {
+    background-color: #FFFFFF;
+    color: #5175FF;
+}
+
+#pro .planButton:hover {
+    color: #829CFF;
+}
+
+.countdownContainer{
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    align-self: center;
+    margin-top: 1px;
+}
+
+.countdownContainer__boxes {
+    height: 60%;
+    width: 230%;
+    /* border: solid green 1px; */
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coming {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.date {
+    margin-top: 0px;
+    margin-left: 1.5%;
+    font-family: 'Kumbh Sans';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    color: #5175FF;
+}
+
+.dateBox {
+    display: block;
+    height: 30%;
+     width: 100%;
+     /* border: pink solid 1px; */
+}
+
+.countAndDate {
+    display: block;
+    margin-top: 10%;
+}
+
+.boxes{
+    box-sizing: border-box;
+    padding-top: 5%;
+    width: 22%;
+    height: 100%;
+    background-color: #333950;;
+    border-radius: 13px;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.3vw;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.boxes, .jsDate {
+    display: block;
+    
+}
+
+.boxes {
+    font-size: 1.4vw;
+}
+
+ .jsDate {
+    color: #FFFFFF;
+    font-size: 2.4vw; 
+    margin-bottom: -15%;
+} 
+
+#bottomButton {
+    width: 15%;
+    height: 23%;
+    margin-top: 15%;
+    font-family: 'Kumbh sans'
+}
+
+@media only screen and (max-width: 1300px){
+    .upperBox {
+        height: 600px;
+    }
+
+    .lowerBox {
+        height: 600px;
+    }
+
+    .planDetails {
+        margin-bottom: 1.8%;
+    }
+
+    .planButton {
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .upperBox {
+        height: 400px;
+    }
+
+    .lowerBox {
+        height: 400px;
+    }
+
+    .planDetails {
+        margin-bottom: 1.0%;
+    }
+
+    .planName {
+        margin-bottom: 3%;
+        margin-top: 1%;
+    }
+
+    .planUsers {
+        margin-top: 1%;
+        margin-bottom: 1.5%;;
+    }
+
+    .priceBox {
+        height: 110%;
+    }
+}
+
+@media only screen and (max-width: 790px){
+    
+    #logo {
+        top:5%;
+        left: 5%;
+    }
+
+    .lowerBox {
+        height: 1200px;
+    }
+
+    .textBox p {
+        font-size: 1.7vw;
+        line-height: 2.2vw;
+    }
+
+    .priceBoxContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 900px;
+        align-self: center;
+    }
+
+    .priceBox {
+        box-sizing: border-box;
+        height: 30%;
+        width: 100%;
+        /* border: solid purple 1px;  */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+
+    .mainText {
+        /* border: solid purple 1px;  */
+        margin-left: 7%;
+        width: 30%;
+        height: 55%;
+    }
+
+    .detailText {
+        margin-right: 10%;
+        margin-top: 5%;
+        /* border: solid purple 1px;  */
+        width: 30%;
+        height: 55%;
+    }
+
+    .buttonTablet {
+        width: 30%;
+        height: 20%;
+        /* border: solid purple 1px; */
+    }
+
+    .planButton {
+        width: 70%;
+        height: 85%;
+        font-size: 1.8vw;
+    }
+
+    .planName {
+        font-size: 2.0vw;
+        text-align: left;
+    }
+
+    .planPrice {
+        margin-top: 10%;
+        font-size: 5.0vw;
+        margin-bottom: 10%;
+        text-align: left;
+    }
+
+    .planUsers {
+        font-size: 2.0vw;
+        text-align: left;
+    }
+
+    .planDetails {
+        font-size: 1.7vw;
+        text-align: left;
+    }
+
+    .countdownContainer{
+        /* border: solid red 1px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        width: 80%;
+        align-self: center;
+        margin-top: 1px;
+    }
+
+    .countdownContainer__boxes {
+        height: 100%;
+        width: 230%;
+        margin-left: -50%;
+        /* border: solid green 1px;       */
+    }
+
+    .jsDate {
+        font-size: 3.0vw; 
+        margin-bottom: 5%;
+    } 
+
+    .date {
+        font-size: 2.5vw;
+
+    }
+
+    #bottomButton {
+        width: 25%;
+        height: 10%;
+        font-size: 2.0vw;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+
+    .upperBox {
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+
+    .lowerBox {
+        height: 1600px;
+    }
+
+    #logo {
+        position: absolute;
+        width: 155px;
+        height: 30px;
+        top: 5%;
+        left: 32%;
+    }
+
+    .charts {
+        margin-top: 33%;
+        margin-left: 10%;
+        width: 60%;
+        height: 30%;
+        margin-bottom: 10%;
+    }
+
+    .textBox {
+        height: 45%;
+        width: 80%;
+        /* border: solid orange 1px; */
+    }
+
+    h1 {
+        font-size: 9.0vw;
+        line-height: 9.0vw;
+        text-align: center;
+        margin-bottom: 7%;
+    }
+
+    .textBox p {
+        font-size: 4.0vw;
+        line-height: 5.0vw;
+        text-align: center;
+    }
+
+    .textBox button {
+        margin-left: 26%;
+        width: 45%;
+        font-size: 4.5vw;
+    } 
+
+    .priceBoxContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 1200px;
+        align-self: center;
+    }
+
+    .priceBox {
+        
+        height: 32%;
+        width: 100%;
+        /* border: solid purple 1px;  */
+        display: block;
+    }
+
+    .mainText {
+        /* border: solid purple 1px;  */
+        margin: auto;
+        width: 60%;
+        height: 25%;
+    }
+
+    .detailText {
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 9%;
+        /* border: solid purple 1px;  */
+        width: 80%;
+        height: 25%;
+    }
+
+    .buttonTablet {
+        margin: auto;
+        width: 45%;
+        height: 20%;
+        /* border: solid purple 1px; */
+    }
+
+    .planButton {
+        margin-left: 0%;
+        margin-top: 15%;
+        width: 100%;
+        height: 65%;
+        font-size: 3.8vw;
+    }
+
+    .planName {
+        font-size: 4.0vw;
+        text-align: center;
+    }
+
+    .planPrice {
+        margin-top: 5%;
+        font-size: 8.0vw;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .planUsers {
+        font-size: 4.0vw;
+        text-align: center;
+    }
+
+    .planDetails {
+        font-size: 4.0vw;
+        text-align: center;
+    }
+
+    .countdownContainer{
+        /* border: solid red 1px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 80%;
+        align-self: center;
+        margin-top: 1px;
+    }
+
+    .countdownContainer__boxes {
+        box-sizing: border-box;
+        height: 100%;
+        width: 200%;
+        margin-left: -50%;
+        /* border: solid green 1px;        */
+    }
+
+    .jsDate {
+        font-size: 7.0vw; 
+        margin-top: 10%;
+        margin-bottom: 15%;
+    } 
+
+    .date {
+        font-size: 5.0vw;
+    }
+
+    .boxes {
+        font-size: 4.0vw;
+    }
+
+    #bottomButton {
+        width: 40%;
+        height: 15%;
+        font-size: 4.0vw;
+    }
+}

@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link href="stylesIndex.css" rel="stylesheet">
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
-<body> 
-  <a href = "sign-up.html">Signup Page</a>
-  A simple solution to complex tasks is coming soon
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+<body>
+  <img id="logo" src='assets/shared/logo.svg'>
+  <div class="upperBox">
+    <div class="textBox">
+      <h1>A simple solution to complex tasks is coming soon</h1>
+      <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
+        collaboration platform built with an intuitive interface to improve productivity.</p>
+      <button onclick="location.href='sign-up.html'">Get Started</button>
+    </div>
+    <div class="charts">
+      <img src='assets/home/illustration-charts.svg'>
+    </div>
+  </div>
+  <div class="lowerBox">
+    <div class="priceBoxContainer">
+      <div class="priceBox" id="basic">
+        <div class="mainText">
+          <h4 class="planName">Basic</h4>
+          <h1 class="planPrice">Free</h1>
+          <p class="planUsers">Up to 5 users for free</p>
+        </div>
+        <div class="detailText">
+          <p class="planDetails">Basic document collaboration</p>
+          <p class="planDetails">2 gb storage</p>
+          <p class="planDetails">Great security and support</p>
+        </div>
+        <div class="buttonTablet"><button class="planButton">Try for Free</button></div>
+      </div>
+      <div class="priceBox" id="pro">
+        <div class="mainText">
+          <h4 class="planName">Pro</h4>
+          <h1 class="planPrice">$9.99</h1>
+          <p class="planUsers">Per user, billed monthly</p>
+        </div>
+        <div class="detailText">
+          <p class="planDetails">All essential integrations</p>
+          <p class="planDetails">50 gb storage</p>
+          <p class="planDetails">More control and insights</p>
+        </div>
+        <div class="buttonTablet"><button class="planButton">Try for Free</button></div>
+      </div>
+      <div class="priceBox" id="ultimate">
+        <div class="mainText">
+          <h4 class="planName">Ultimate</h4>
+          <h1 class="planPrice">$19.99</h1>
+          <p class="planUsers">Per user, billed monthly</p>
+        </div>
+        <div class="detailText">
+          <p class="planDetails">Robust work management</p>
+          <p class="planDetails">100 gb storage</p>
+          <p class="planDetails">VIP support</p>
+        </div>
+        <div class="buttonTablet"><button class="planButton">Try for Free</button></div>
+      </div>
+    </div>
+    <div class="countdownContainer">
+      <div class="countAndDate">
+        <div class="dateBox">
+          <h4 class="coming">Coming<span class="date" id="day">4</span><span class="date" id="month">Nov</span><span
+              class="date" id="year">2020</span></h4>
+        </div>
+        <div class="countdownContainer__boxes">
+          <div class="boxes"><span class="jsDate" id="days">30</span>Days</div>
+          <div class="boxes"><span class="jsDate" id="hours">00</span>Hours</div>
+          <div class="boxes"><span class="jsDate" id="minutes">00</span>Min</div>
+          <div class="boxes"><span class="jsDate" id="seconds">00</span>Sec</div>
+        </div>
+      </div>
+      <button onclick="location.href='sign-up.html'" id="bottomButton">Get Started</button>
+    </div>
 
-  Get Started
+  </div>
+  <div class="background"></div>
+  <script src='home.js'></script>
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
-
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
-
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
 </body>
+
 </html>
